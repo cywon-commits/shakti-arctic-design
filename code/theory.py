@@ -28,6 +28,13 @@ def curve(p,a0,a4,m=40001):
     dh=np.gradient(h,th); dv=np.gradient(v,th)
     x=h*np.cos(v)-dh/dv*np.sin(v); y=h*np.sin(v)+dh/dv*np.cos(v)
     return th,v,x,y
+def closed_form(n,c):
+    """Explicit parameters for n/3 < c < n/sqrt(2):  sigma = 2 sin(theta_1) = (2 rho - 1 + sqrt(10 rho^2 - 1))/(1 + rho), rho = c/n."""
+    rho=c/n; s=(2*rho-1+np.sqrt(10*rho*rho-1))/(1+rho); q=s*s-4*s-6
+    p=(1-s-s*s)/(1+s)
+    a0=(s**6+2*s**5-10*s**4-28*s**3-14*s**2+8*s+4)/((s+1)**2*q)
+    a4=-2*(s**4+3*s**3+3*s**2+2*s+2)/((s+1)*q)
+    return p,n*a0,n*a4
 if __name__=='__main__':
     for n,c in [(1,.2),(1,.3443),(1,.4),(1,.5),(1,.6),(1,.8),(1,.95)]:
         print(n,c,solve(n,c))

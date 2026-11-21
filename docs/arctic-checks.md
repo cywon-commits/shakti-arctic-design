@@ -2,6 +2,8 @@
 
 작성: 2026-11-21 · 코드 기준: shakti-vorticity 저장소의 `claude/funny-lamport-2lefxp` 브랜치(`open_ilp.py`의 vertex 비용 규약) · 검증 스크립트: `code/` · 앞 문서: `docs/boundary-height-dictionary.md`
 
+> **후속 보완 (`analytic-results.md`):** (1) 2절의 팔각형 식은 45° 변의 오프셋이 d ≡ 2 (mod 4)일 때만 맞다. d ≡ 0이면 바람개비 방향이 반대다. (2) 4.3절의 n = 121 검증은 배정밀도 한계로 일부 오염되어 있었다. 믿을 수 있는 범위는 n ≈ 61까지다. (3) 4.2절의 매개변수는 닫힌 식으로 구했다.
+
 ## 0. 판정
 
 | 확인 항목 | 결과 |
