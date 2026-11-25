@@ -51,6 +51,7 @@ figs/   verification figures
 | `bmono.py`, `switch_square.py` | finite temperature: boundary-monomer dimer model by a Pfaffian (checked against exhaustive counts); free-plaquette fraction of the block-aligned square versus `T_on/T` |
 | `mixed_scan.py`, `mixed_digest.py` | all 256 rectangles by edge offsets: state at `T = 0` and at `y = 1` (exact rational arithmetic, needs `python-flint`) |
 | `zpoly.py` | exact polynomial `Z(y)`: number of states for every number of free plaquettes |
+| `corner_closed.py` | closed form of that solution: `X1 = a`, `X2 = sqrt(a)`, support function `h sqrt(1-h^2) = a sin(phi) cos(phi)`, temperature as one integral |
 | `corner_theory.py`, `corner_field.py`, `fig_corner_theory.py` | hodograph solution of the corner-switch sample: edge zones, frozen boundary, temperature |
 | `profile_width.py` | free-plaquette probability along the switchable edges versus size at fixed scaled field |
 | `switch_corner.py`, `fig_switch_corner.py` | corner-switch sample (two adjacent block-aligned edges): free fraction and liquid region versus temperature |
