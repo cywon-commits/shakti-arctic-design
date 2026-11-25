@@ -4,3 +4,4 @@ matplotlib
 pulp<3
 sympy
 mpmath
+python-flint
