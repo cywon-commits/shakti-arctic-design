@@ -16,9 +16,9 @@ def phi_field(a):
     Iw=mp.quad(lambda f: lw(f)*mp.diff(U,f),[mp.pi/2,3*mp.pi/8,mp.pi/4])/2
     return mp.re(2*(Iz-Iw-I3))
 def free_fraction(a):
+    """f = a + int rho du = (2 sqrt2 a/pi) int_0^{pi/2} dtheta / sqrt(sin^2 + sqrt(sin^4 + 4 a^2 cos^2))   (r = tan(theta/2))"""
     a=mp.mpf(a)
-    rho=lambda u: 4/mp.pi*mp.atan(mp.exp(-mp.asinh(mp.sqrt((u*u-a*a)/(a*a-u**4)))))
-    return a+mp.quad(rho,[a,(a+mp.sqrt(a))/2,mp.sqrt(a)])
+    return 2*mp.sqrt(2)*a/mp.pi*mp.quad(lambda t: 1/mp.sqrt(mp.sin(t)**2+mp.sqrt(mp.sin(t)**4+4*a*a*mp.cos(t)**2)),[0,mp.pi/4,mp.pi/2])
 if __name__=='__main__':
     mp.mp.dps=20
     for a in (0.05,0.1,0.2,0.4,0.6,0.8,0.95,0.999):
@@ -29,3 +29,10 @@ def phi_closed(a):
     a=mp.mpf(a); g=lambda q: mp.sqrt((1+mp.sqrt(1-a*a+a*a*q*q))/2)
     f=lambda q: (g(q)-1)/(q*q-1) if abs(q-1)>mp.mpf(10)**(-8) else a*a/8
     return mp.quad(f,[0,0.5,1,2,10,mp.inf])
+def dphi_da(a):
+    a=mp.mpf(a); R=lambda q: mp.sqrt(1-a*a+a*a*q*q)
+    return a/4*mp.quad(lambda q: 1/(mp.sqrt((1+R(q))/2)*R(q)),[0,1,10,mp.inf])
+def entropy(a):
+    """s = ln(number of states)/L^2 at free fraction f(a):  ds/df = -phi/4  =>  s(a) = (1/4) int_a^1 phi df"""
+    a=mp.mpf(a); F=free_fraction
+    return (mp.log(1+mp.sqrt(2))-phi_closed(a)*F(a)-mp.quad(lambda x: F(x)*dphi_da(x),[a,(1+a)/2,1]))/4
