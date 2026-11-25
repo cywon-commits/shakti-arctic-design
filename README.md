@@ -47,6 +47,7 @@ figs/   verification figures
 | `shuffle_probs.py`, `plus_shuffle.py` | edge probabilities of weighted Aztec diamonds by urban renewal in the log domain; embedding of a plus-shaped sample |
 | `verify_shuffle.py`, `width_scaling.py`, `fig_shuffle.py` | curve versus exact statistics at large sizes, boundary-width scaling, figure |
 | `lshape_theory.py`, `lshape_cps.py`, `lshape_compare.py`, `fig_lshape.py` | L-shaped sample: degree-2 tangent family versus the published curve (arXiv:1807.07549); needs `mpmath` |
+| `bmono.py`, `switch_square.py` | finite temperature: boundary-monomer dimer model by a Pfaffian (checked against exhaustive counts); free-plaquette fraction of the block-aligned square versus `T_on/T` |
 | `maps.py`, `plusmap.py`, `overlay.py` | exact local dimer statistics and frozen-phase maps |
 | `verify_big.py`, `fig_verify.py` | quantitative comparison of curve and exact statistics; figure |
 
