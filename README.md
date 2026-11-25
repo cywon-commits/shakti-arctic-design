@@ -11,9 +11,9 @@ Status: exploratory (November 2026). The notes in `docs/` are working notes in K
 1. **Boundary-height dictionary.** In Shakti coordinates the slope polygon is the square `|dh/dX| <= 1, |dh/dY| <= 1`. The boundary height of any cut follows from counting the unit edges whose perpendicular neighbour lies outside the sample (H plaquette +1, V plaquette -1). Only two straight cuts are extremal: axis cuts through the plaquette blocks (a face of the square, Aztec-type edge) and 45-degree cuts at even offset (a vertex, one ice phase attached to the edge).
 2. **Stem-island rule.** An edge plaquette whose "stem" island (the island ending at the midpoint of its outer long side) is absent can close into a free vortex and gains `J/2`. The ground-state energy of the open vertex model equals the minimum number of dimers in a boundary-monomer dimer model. This agreed with integer-programming ground states for all 44 samples tested. The edge termination therefore decides the boundary type, and single stem islands act as switches for boundary-height steps of 4.
 3. **Box rule and octagons: a movable arctic circle.** Two boundary points whose height difference equals their l1 distance freeze their bounding box. As a corollary, an array with four axis edges and four even 45-degree edges reduces exactly to an Aztec diamond on an inner square; the position and radius of the arctic circle are set independently by the cuts. Each cut continues one adjacent axis edge, chosen by its offset class (d mod 4); four cuts of mixed classes admit no tiling, and convex corner cuts alone never change the circular shape (checked on 8500 samples).
-4. **Plus-shaped arrays: a non-circular liquid region.** For arm reach `n` and arm half-width `c`: no tiling for `c < n/3`; a rational curve of class 10 for `n/3 < c < n/sqrt(2)`, with a three-phase frozen pocket at each reflex corner; the full arctic circle for `c >= n/sqrt(2)`. The curve has an explicit one-parameter form, `c/n = (s^2 + 2s + 2)/(6 + 4s - s^2)`, and agrees with exact Kasteleyn statistics for `n = 31` to `61` (`figs/plus_verify_n61.png`).
+4. **Plus-shaped arrays: a non-circular liquid region.** For arm reach `n` and arm half-width `c`: no tiling for `c < n/3`; a rational curve of class 10 for `n/3 < c < n/sqrt(2)`, with a three-phase frozen pocket at each reflex corner; the full arctic circle for `c >= n/sqrt(2)`. The curve has an explicit one-parameter form, `c/n = (s^2 + 2s + 2)/(6 + 4s - s^2)`, and agrees with exact statistics up to `n = 481` (347,000 plaquettes): no cell farther than 1-2% of `n` from the curve is misclassified (`figs/plus_verify_n241.png`). The width of the boundary grows as `n^0.36`, close to the expected 1/3.
 
-Caveats: the tangent-line family follows from the Kenyon-Okounkov characteristic solution, but the condition at the reflex corners rests on a physical argument and numerical agreement, not a proof. Double-precision Kasteleyn inverses are reliable only up to about `n = 61`; larger sizes need extended precision. Prior literature on non-convex domino regions has not been searched yet. See `docs/analytic-results.md`.
+Caveats: the tangent-line family follows from the Kenyon-Okounkov characteristic solution, but the condition at the reflex corners rests on a physical argument and numerical agreement, not a proof. Double-precision Kasteleyn inverses are reliable only up to about `n = 61`; larger sizes use the cancellation-free urban-renewal recursion (`shuffle_probs.py`). Prior literature on non-convex domino regions has not been searched yet. See `docs/analytic-results.md`.
 
 ## Layout
 
@@ -41,6 +41,8 @@ figs/   verification figures
 | `box_rule.py`, `mixed_octagon.py` | box rule versus peeling: rectangular samples, both offset classes, and a full scan of mixed classes |
 | `theory.py`, `scan_theory.py`, `derive_closed_form.py` | class-10 tangent-line family, numerical and closed-form parameters |
 | `precision_check.py` | precision of the Kasteleyn inverse (row sums of pairing probabilities) |
+| `shuffle_probs.py`, `plus_shuffle.py` | edge probabilities of weighted Aztec diamonds by urban renewal in the log domain; embedding of a plus-shaped sample |
+| `verify_shuffle.py`, `width_scaling.py`, `fig_shuffle.py` | curve versus exact statistics at large sizes, boundary-width scaling, figure |
 | `maps.py`, `plusmap.py`, `overlay.py` | exact local dimer statistics and frozen-phase maps |
 | `verify_big.py`, `fig_verify.py` | quantitative comparison of curve and exact statistics; figure |
 
@@ -55,6 +57,7 @@ mkdir -p data
 python cut_slopes.py
 python test_edge_model_axis_diamond.py
 python verify_big.py 61 21 31 41 && python fig_verify.py 61
+python verify_shuffle.py 61,31 121,61 241,121 && python width_scaling.py
 ```
 
 `pulp` ships the CBC solver used by the integer programs. `derive_closed_form.py` needs `sympy`.
