@@ -3,3 +3,4 @@ scipy
 matplotlib
 pulp<3
 sympy
+mpmath
