@@ -16,9 +16,10 @@ plaquettes without their stem island are free (yellow, gain J/2); half-dimer sit
 through-block axis edges, even 45-degree cuts; Kasteleyn) with the circle predicted by the box rule (red) inscribed in the remaining square (dashed).
 (d) mixes the two offset classes d = 0, 2 (mod 4).
 
-**Fig. 3.** Reflex corners make the liquid region non-circular. (a-c) Plus-shaped samples with arm reach n = 241 and half-width c, exact liquidity
-(urban-renewal recursion, about 1.7 x 10^5 plaquettes) with the class-10 curve (red). (d) The family of curves in one quadrant for
-1/3 < c/n < 1/sqrt(2) (dotted: sample outline); below c/n = 1/3 there is no tiling, above 1/sqrt(2) the curve is the full circle.
+**Fig. 3.** Reflex corners make the liquid region non-circular. (a-c) Plus-shaped samples with arm reach n = 241 and half-width c: exact
+pairing probabilities (urban-renewal recursion, about 1.7 x 10^5 plaquettes). Frozen cells are coloured by their ice phase (the dominant domino
+orientation), liquid cells fade to white; black: class-10 curve. (d) Zoom on a reflex corner of (a): a frozen pocket where three ice phases meet,
+bounded by two arcs of the curve. Below c/n = 1/3 there is no tiling; above 1/sqrt(2) the curve is the full circle.
 
 **Fig. 4.** A temperature switch. (a) Ground states of rectangles by edge type: only two adjacent block-aligned edges give a unique ground state
 that melts. (b-d) Exact liquidity of that sample (L = 48, boundary model with half-dimer sites) at three temperatures, with the frozen boundaries of
@@ -41,7 +42,7 @@ vertex model (circles), boundary model with half-dimer sites (lines), freeable s
 | Exact results: no error bars needed | to state in captions (all values exact) |
 | Same colour = same object | liquidity map viridis 0-0.75 everywhere; red = scaling prediction everywhere; Okabe-Ito for sizes |
 | Final width 7.0 in, 8 pt | yes; Fig. 6 is 4.3 in (could be single column at 3.375 in) |
-| Not yet | Fig. 1(c) half-dimer sites are drawn at plaquette centres, not at their boundary vertices; frozen phases are not coloured by ice phase (a phase map would show the three-phase pockets of Fig. 3); compiled-PDF check at 100 % |
+| Not yet | Fig. 1(c) half-dimer sites are drawn at plaquette centres, not at their boundary vertices; ice-phase colours of Fig. 3 still to be matched with the labels of Fig. 1(b); compiled-PDF check at 100 %; Fig. 6 placement decided after the text |
 
 ## Appendix candidates (existing working figures)
 - `figs/lshape_vs_cps.png`: reflex-corner condition reproduces Colomo-Pronko-Sportiello (2018).

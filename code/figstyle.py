@@ -22,3 +22,16 @@ def liq_image(ax,cen,val,lim,res=600,rmax=1.6):
     X,Y=np.meshgrid(xs,ys); d,i=cKDTree(cen).query(np.c_[X.ravel(),Y.ravel()])
     Z=np.where(d<rmax,np.asarray(val)[i],np.nan).reshape(X.shape)
     return ax.imshow(Z,origin='lower',extent=(x0,x1,y0,y1),cmap=LIQ_CMAP,vmin=0,vmax=LIQ_MAX,interpolation='nearest',rasterized=True)
+PHASE_COLS=['#0072B2','#E69F00','#009E73','#CC79A7']   # four ice phases (domino directions +X, +Y, -X, -Y)
+def phase_rgb(prob):
+    """cell colour: ice-phase colour weighted by how frozen the cell is (white = liquid, P_max = 1/4)"""
+    import numpy as np, matplotlib.colors as mc
+    cols=np.array([mc.to_rgb(c) for c in PHASE_COLS]); k=prob.argmax(1); w=np.clip((prob.max(1)-0.25)/0.75,0,1)[:,None]
+    return (1-w)*np.ones(3)+w*cols[k]
+def rgb_image(ax,cen,rgb,lim,res=600,rmax=1.6):
+    import numpy as np
+    from scipy.spatial import cKDTree
+    (x0,x1),(y0,y1)=lim; xs=np.linspace(x0,x1,res); ys=np.linspace(y0,y1,int(res*(y1-y0)/(x1-x0)))
+    X,Y=np.meshgrid(xs,ys); d,i=cKDTree(cen).query(np.c_[X.ravel(),Y.ravel()])
+    Z=np.asarray(rgb)[i]; Z=np.concatenate([Z,(d<rmax)[:,None].astype(float)],1).reshape(X.shape+(4,))
+    return ax.imshow(Z,origin='lower',extent=(x0,x1,y0,y1),interpolation='nearest',rasterized=True)
