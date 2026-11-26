@@ -59,3 +59,8 @@ def field2(c,n=400,eps=1e-4):
     tot=np.sum(m(lz)*np.diff(v))/2-np.sum(m(lw)*np.diff(u))/2
     du=(v[-1]-u[-1])/2; tot+=(lz[-1]*du-lw[-1]*(-du))/2*0     # closing segment is O(eps); ignored
     return 2*tot,(u[-1],v[-1])
+def field_closed(c):
+    """(J/2T)/m = ln(1+sqrt2) + (1/2) int_0^1 K(sqrt(q^2+b^2)) dq/sqrt(1-q^2)   (flux written as -1/2 int Psi dz/z along the S edge and the SW cap boundary)"""
+    f=lambda th: c.K(np.sqrt(np.cos(th)**2+c.b**2))
+    return np.log(1+np.sqrt(2))+0.5*quad(f,0,np.pi/2,limit=200)[0]
+def X1(c): return 1+c.K(c.p1)
