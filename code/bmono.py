@@ -27,9 +27,7 @@ class BMono:
     def __init__(s,cells,free,c_sign=1):
         cen={c:centre(c) for c in cells}; walk=outer_walk(cells); seen={}
         for k,c in enumerate(walk):
-            if c in free:
-                assert c not in seen,'a freeable cell is visited twice by the boundary walk'
-                seen[c]=k
+            if c in free and c not in seen: seen[c]=k     # a cell visited twice (corner) keeps its first position
         assert len(seen)==len(free),'a freeable cell is not on the outer face'
         F=sorted(free,key=seen.get)
         s.order=F+sorted(set(cells)-set(free)); s.idx={c:k for k,c in enumerate(s.order)}; s.m=len(F); s.N=len(s.order); s.cen=cen
