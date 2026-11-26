@@ -58,6 +58,10 @@ F numerical methods.
 
 1. Fig. 6 in the main text (Sec. V A) or in Appendix D (v0.1: appendix).
 2. Author list (v0.1: corresponding author only).
-3. The vorticity paper states that arrays cut through the blocks are free of the T_on mechanism; Sec. VI shows that
-   their half-dimer sites give the same temperature scale. One of the two texts must be adjusted.
+3. Settled: the vorticity paper's statement that arrays cut through the blocks avoid the T_on limit is wrong. Their
+   boundary vertices become unhappy while covering one plaquette (half-dimer sites, J/2 each, fugacity 2e^{-J/2T});
+   the vertex model's first excited level of the through-block square equals the boundary-model count exactly
+   (768, 1966080, 67645734912 for N = 3, 5, 7), and the circle melts at x = 1, T = J/[(N+2) ln 2], the same expression
+   as T_on for a block-aligned square of the same side. This manuscript keeps Sec. VI; the vorticity paper must be
+   corrected (Sec. on straight edges and the design-rule paragraph of the conclusion).
 4. Zenodo DOI for the repository at submission.
