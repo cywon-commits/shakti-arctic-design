@@ -1,0 +1,388 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{31}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2006)\citenamefont {Wang},
+  \citenamefont {Nisoli}, \citenamefont {Freitas}, \citenamefont {Li},
+  \citenamefont {McConville}, \citenamefont {Cooley}, \citenamefont {Lund},
+  \citenamefont {Samarth}, \citenamefont {Leighton}, \citenamefont {Crespi},\
+  and\ \citenamefont {Schiffer}}]{Wang2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~F.}\ \bibnamefont
+  {Wang}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Nisoli}},
+  \bibinfo {author} {\bibfnamefont {R.~S.}\ \bibnamefont {Freitas}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Li}}, \bibinfo {author}
+  {\bibfnamefont {W.}~\bibnamefont {McConville}}, \bibinfo {author}
+  {\bibfnamefont {B.~J.}\ \bibnamefont {Cooley}}, \bibinfo {author}
+  {\bibfnamefont {M.~S.}\ \bibnamefont {Lund}}, \bibinfo {author}
+  {\bibfnamefont {N.}~\bibnamefont {Samarth}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Leighton}}, \bibinfo {author} {\bibfnamefont {V.~H.}\
+  \bibnamefont {Crespi}},\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Schiffer}},\ }\bibfield  {title} {\bibinfo {title}
+  {Artificial `spin ice' in a geometrically frustrated lattice of nanoscale
+  ferromagnetic islands},\ }\href {https://doi.org/10.1038/nature04447}
+  {\bibfield  {journal} {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo
+  {volume} {439}},\ \bibinfo {pages} {303} (\bibinfo {year}
+  {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nisoli}\ \emph {et~al.}(2013)\citenamefont {Nisoli},
+  \citenamefont {Moessner},\ and\ \citenamefont {Schiffer}}]{Nisoli2013RMP}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Nisoli}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Moessner}},\
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Schiffer}},\
+  }\bibfield  {title} {\bibinfo {title} {Colloquium: Artificial spin ice:
+  Designing and imaging magnetic frustration},\ }\href
+  {https://doi.org/10.1103/RevModPhys.85.1473} {\bibfield  {journal} {\bibinfo
+  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo
+  {pages} {1473} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Skj{\ae}rv{\o}}\ \emph {et~al.}(2020)\citenamefont
+  {Skj{\ae}rv{\o}}, \citenamefont {Marrows}, \citenamefont {Stamps},\ and\
+  \citenamefont {Heyderman}}]{Skjaervo2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~H.}\ \bibnamefont
+  {Skj{\ae}rv{\o}}}, \bibinfo {author} {\bibfnamefont {C.~H.}\ \bibnamefont
+  {Marrows}}, \bibinfo {author} {\bibfnamefont {R.~L.}\ \bibnamefont
+  {Stamps}},\ and\ \bibinfo {author} {\bibfnamefont {L.~J.}\ \bibnamefont
+  {Heyderman}},\ }\bibfield  {title} {\bibinfo {title} {Advances in artificial
+  spin ice},\ }\href {https://doi.org/10.1038/s42254-019-0118-3} {\bibfield
+  {journal} {\bibinfo  {journal} {Nat. Rev. Phys.}\ }\textbf {\bibinfo {volume}
+  {2}},\ \bibinfo {pages} {13} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Morrison}\ \emph {et~al.}(2013)\citenamefont
+  {Morrison}, \citenamefont {Nelson},\ and\ \citenamefont
+  {Nisoli}}]{Morrison2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
+  {Morrison}}, \bibinfo {author} {\bibfnamefont {T.~R.}\ \bibnamefont
+  {Nelson}},\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Nisoli}},\ }\bibfield  {title} {\bibinfo {title} {Unhappy vertices in
+  artificial spin ice: new degeneracies from vertex frustration},\ }\href
+  {https://doi.org/10.1088/1367-2630/15/4/045009} {\bibfield  {journal}
+  {\bibinfo  {journal} {New J. Phys.}\ }\textbf {\bibinfo {volume} {15}},\
+  \bibinfo {pages} {045009} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Chern}\ \emph {et~al.}(2013)\citenamefont {Chern},
+  \citenamefont {Morrison},\ and\ \citenamefont {Nisoli}}]{Chern2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.-W.}\ \bibnamefont
+  {Chern}}, \bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
+  {Morrison}},\ and\ \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Nisoli}},\ }\bibfield  {title} {\bibinfo {title} {Degeneracy and criticality
+  from emergent frustration in artificial spin ice},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.111.177201} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. Lett.}\ }\textbf {\bibinfo {volume} {111}},\
+  \bibinfo {pages} {177201} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gilbert}\ \emph {et~al.}(2014)\citenamefont
+  {Gilbert}, \citenamefont {Chern}, \citenamefont {Zhang}, \citenamefont
+  {O'Brien}, \citenamefont {Fore}, \citenamefont {Nisoli},\ and\ \citenamefont
+  {Schiffer}}]{Gilbert2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Gilbert}}, \bibinfo {author} {\bibfnamefont {G.-W.}\ \bibnamefont {Chern}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Zhang}}, \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {O'Brien}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Fore}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Nisoli}},\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Schiffer}},\ }\bibfield  {title} {\bibinfo {title}
+  {Emergent ice rule and magnetic charge screening from vertex frustration in
+  artificial spin ice},\ }\href {https://doi.org/10.1038/nphys3037} {\bibfield
+  {journal} {\bibinfo  {journal} {Nat. Phys.}\ }\textbf {\bibinfo {volume}
+  {10}},\ \bibinfo {pages} {670} (\bibinfo {year} {2014})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Lao}\ \emph {et~al.}(2018)\citenamefont {Lao},
+  \citenamefont {Caravelli}, \citenamefont {Sheikh}, \citenamefont {Sklenar},
+  \citenamefont {Gardeazabal}, \citenamefont {Watts}, \citenamefont {Albrecht},
+  \citenamefont {Scholl}, \citenamefont {Dahmen}, \citenamefont {Nisoli},\ and\
+  \citenamefont {Schiffer}}]{Lao2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Lao}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Caravelli}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Sheikh}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Sklenar}}, \bibinfo {author}
+  {\bibfnamefont {D.}~\bibnamefont {Gardeazabal}}, \bibinfo {author}
+  {\bibfnamefont {J.~D.}\ \bibnamefont {Watts}}, \bibinfo {author}
+  {\bibfnamefont {A.~M.}\ \bibnamefont {Albrecht}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Scholl}}, \bibinfo {author} {\bibfnamefont
+  {K.}~\bibnamefont {Dahmen}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Nisoli}},\ and\ \bibinfo {author} {\bibfnamefont
+  {P.}~\bibnamefont {Schiffer}},\ }\bibfield  {title} {\bibinfo {title}
+  {Classical topological order in the kinetics of artificial spin ice},\ }\href
+  {https://doi.org/10.1038/s41567-018-0077-0} {\bibfield  {journal} {\bibinfo
+  {journal} {Nat. Phys.}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages}
+  {723} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Elkies}\ \emph {et~al.}(1992)\citenamefont {Elkies},
+  \citenamefont {Kuperberg}, \citenamefont {Larsen},\ and\ \citenamefont
+  {Propp}}]{EKLP1992}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Elkies}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Kuperberg}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Larsen}},\ and\ \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Propp}},\ }\bibfield  {title}
+  {\bibinfo {title} {Alternating-sign matrices and domino tilings ({P}art
+  {I})},\ }\href {https://doi.org/10.1023/A:1022420103267} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Algebraic Combin.}\ }\textbf {\bibinfo
+  {volume} {1}},\ \bibinfo {pages} {111} (\bibinfo {year} {1992})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Jockusch}\ \emph {et~al.}(1998)\citenamefont
+  {Jockusch}, \citenamefont {Propp},\ and\ \citenamefont
+  {Shor}}]{Jockusch1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Jockusch}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Propp}},\
+  and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Shor}},\ }\href
+  {https://arxiv.org/abs/math/9801068} {\bibinfo {title} {Random domino tilings
+  and the arctic circle theorem}} (\bibinfo {year} {1998}),\ \Eprint
+  {https://arxiv.org/abs/math/9801068} {arXiv:math/9801068} \BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Cohn}\ \emph {et~al.}(1996)\citenamefont {Cohn},
+  \citenamefont {Elkies},\ and\ \citenamefont {Propp}}]{Cohn1996}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Cohn}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Elkies}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Propp}},\ }\bibfield
+  {title} {\bibinfo {title} {Local statistics for random domino tilings of the
+  {A}ztec diamond},\ }\href {https://doi.org/10.1215/S0012-7094-96-08506-3}
+  {\bibfield  {journal} {\bibinfo  {journal} {Duke Math. J.}\ }\textbf
+  {\bibinfo {volume} {85}},\ \bibinfo {pages} {117} (\bibinfo {year}
+  {1996})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cohn}\ \emph {et~al.}(2001)\citenamefont {Cohn},
+  \citenamefont {Kenyon},\ and\ \citenamefont {Propp}}]{Cohn2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Cohn}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Kenyon}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Propp}},\ }\bibfield
+  {title} {\bibinfo {title} {A variational principle for domino tilings},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J. Amer. Math.
+  Soc.}\ }\textbf {\bibinfo {volume} {14}},\ \bibinfo {pages} {297} (\bibinfo
+  {year} {2001})},\ \Eprint {https://arxiv.org/abs/math/0008220}
+  {arXiv:math/0008220} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kenyon}\ \emph {et~al.}(2006)\citenamefont {Kenyon},
+  \citenamefont {Okounkov},\ and\ \citenamefont {Sheffield}}]{KOS2006}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Kenyon}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Okounkov}},\
+  and\ \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Sheffield}},\
+  }\bibfield  {title} {\bibinfo {title} {Dimers and amoebae},\ }\href
+  {https://doi.org/10.4007/annals.2006.163.1019} {\bibfield  {journal}
+  {\bibinfo  {journal} {Ann. Math.}\ }\textbf {\bibinfo {volume} {163}},\
+  \bibinfo {pages} {1019} (\bibinfo {year} {2006})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kenyon}\ and\ \citenamefont
+  {Okounkov}(2007)}]{Kenyon2007}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Kenyon}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Okounkov}},\ }\bibfield  {title} {\bibinfo {title} {Limit shapes and the
+  complex {B}urgers equation},\ }\href
+  {https://doi.org/10.1007/s11511-007-0021-0} {\bibfield  {journal} {\bibinfo
+  {journal} {Acta Math.}\ }\textbf {\bibinfo {volume} {199}},\ \bibinfo {pages}
+  {263} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Colomo}\ and\ \citenamefont
+  {Pronko}(2013)}]{ColomoPronko2013}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Colomo}}\ and\ \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Pronko}},\ }\bibfield  {title} {\bibinfo {title} {Third-order phase
+  transition in random tilings},\ }\href
+  {https://doi.org/10.1103/PhysRevE.88.042125} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo
+  {pages} {042125} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ferrari}\ and\ \citenamefont
+  {Vet{\H{o}}}(2021)}]{FerrariVeto2021}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~L.}\ \bibnamefont
+  {Ferrari}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Vet{\H{o}}}},\ }\bibfield  {title} {\bibinfo {title} {Fluctuations of the
+  arctic curve in the tilings of the {A}ztec diamond on restricted domains},\
+  }\bibfield  {journal} {\bibinfo  {journal} {Ann. Appl. Probab.}\ }\textbf
+  {\bibinfo {volume} {31}},\ \href {https://doi.org/10.1214/20-AAP1590}
+  {10.1214/20-AAP1590} (\bibinfo {year} {2021})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Colomo}\ \emph {et~al.}(2019)\citenamefont {Colomo},
+  \citenamefont {Pronko},\ and\ \citenamefont {Sportiello}}]{CPS2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Colomo}}, \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont {Pronko}},\
+  and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Sportiello}},\
+  }\bibfield  {title} {\bibinfo {title} {Arctic curve of the free-fermion
+  six-vertex model in an {L}-shaped domain},\ }\href
+  {https://doi.org/10.1007/s10955-018-2170-2} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Stat. Phys.}\ }\textbf {\bibinfo {volume} {174}},\ \bibinfo
+  {pages} {1} (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Charlier}\ and\ \citenamefont
+  {Claeys}(2025)}]{CharlierClaeys2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Charlier}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Claeys}},\ }\href {https://arxiv.org/abs/2512.20388} {\bibinfo {title}
+  {Asymptotics for the number of domino tilings of {L}-shaped {A}ztec domains}}
+  (\bibinfo {year} {2025}),\ \Eprint {https://arxiv.org/abs/2512.20388}
+  {arXiv:2512.20388} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Colomo}\ and\ \citenamefont
+  {Pronko}(2024)}]{ColomoPronko2024}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Colomo}}\ and\ \bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Pronko}},\ }\bibfield  {title} {\bibinfo {title} {Scaling limit of domino
+  tilings on a pentagonal domain},\ }\href
+  {https://doi.org/10.1103/PhysRevE.110.054140} {\bibfield  {journal} {\bibinfo
+   {journal} {Phys. Rev. E}\ }\textbf {\bibinfo {volume} {110}},\ \bibinfo
+  {pages} {054140} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Colomo}\ and\ \citenamefont
+  {Sportiello}(2016)}]{ColomoSportiello2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Colomo}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Sportiello}},\ }\bibfield  {title} {\bibinfo {title} {Arctic curves of the
+  six-vertex model on generic domains: {T}he tangent method},\ }\href
+  {https://doi.org/10.1007/s10955-016-1590-0} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Stat. Phys.}\ }\textbf {\bibinfo {volume} {164}},\ \bibinfo
+  {pages} {1488} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Astala}\ \emph {et~al.}(2020)\citenamefont {Astala},
+  \citenamefont {Duse}, \citenamefont {Prause},\ and\ \citenamefont
+  {Zhong}}]{Astala2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Astala}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Duse}},
+  \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Prause}},\ and\ \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Zhong}},\ }\href
+  {https://arxiv.org/abs/2004.02599} {\bibinfo {title} {Dimer models and
+  conformal structures}} (\bibinfo {year} {2020}),\ \Eprint
+  {https://arxiv.org/abs/2004.02599} {arXiv:2004.02599} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kenyon}\ and\ \citenamefont
+  {Prause}(2020)}]{KenyonPrause2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Kenyon}}\ and\ \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Prause}},\ }\href {https://arxiv.org/abs/2006.01219} {\bibinfo {title}
+  {Gradient variational problems in {$\mathbb{R}^2$}}} (\bibinfo {year}
+  {2020}),\ \Eprint {https://arxiv.org/abs/2006.01219} {arXiv:2006.01219}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kuchumov}(2026)}]{Kuchumov2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Kuchumov}},\ }\href {https://arxiv.org/abs/2603.21255} {\bibinfo {title}
+  {Limit shapes and harmonic tricks}} (\bibinfo {year} {2026}),\ \Eprint
+  {https://arxiv.org/abs/2603.21255} {arXiv:2603.21255} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kim}\ \emph {et~al.}(2026)\citenamefont {Kim},
+  \citenamefont {Yoo}, \citenamefont {Choi}, \citenamefont {Kwon},\ and\
+  \citenamefont {Won}}]{KimVorticity}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Kim}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Yoo}}, \bibinfo
+  {author} {\bibfnamefont {J.}~\bibnamefont {Choi}}, \bibinfo {author}
+  {\bibfnamefont {H.~Y.}\ \bibnamefont {Kwon}},\ and\ \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Won}},\ }\bibfield  {title} {\bibinfo
+  {title} {Boundary-controlled algebraic vorticity order in {S}hakti artificial
+  spin ice}} (\bibinfo {year} {2026}),\ \bibinfo {note}
+  {unpublished}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Won}(2026{\natexlab{a}})}]{WonVacancies}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Won}},\ }\bibfield  {title} {\bibinfo {title} {Thermal vacancies melt arctic
+  order: corner charges and an exact solution for the {A}ztec diamond}}
+  (\bibinfo {year} {2026}{\natexlab{a}}),\ \bibinfo {note}
+  {unpublished}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Thurston}(1990)}]{Thurston1990}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~P.}\ \bibnamefont
+  {Thurston}},\ }\bibfield  {title} {\bibinfo {title} {Conway's tiling
+  groups},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Amer.
+  Math. Monthly}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo {pages} {757}
+  (\bibinfo {year} {1990})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kasteleyn}(1961)}]{Kasteleyn1961}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~W.}\ \bibnamefont
+  {Kasteleyn}},\ }\bibfield  {title} {\bibinfo {title} {The statistics of
+  dimers on a lattice: {I}. {T}he number of dimer arrangements on a quadratic
+  lattice},\ }\href {https://doi.org/10.1016/0031-8914(61)90063-5} {\bibfield
+  {journal} {\bibinfo  {journal} {Physica}\ }\textbf {\bibinfo {volume} {27}},\
+  \bibinfo {pages} {1209} (\bibinfo {year} {1961})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Temperley}\ and\ \citenamefont
+  {Fisher}(1961)}]{Temperley1961}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~N.~V.}\
+  \bibnamefont {Temperley}}\ and\ \bibinfo {author} {\bibfnamefont {M.~E.}\
+  \bibnamefont {Fisher}},\ }\bibfield  {title} {\bibinfo {title} {Dimer problem
+  in statistical mechanics---an exact result},\ }\href
+  {https://doi.org/10.1080/14786436108243366} {\bibfield  {journal} {\bibinfo
+  {journal} {Phil. Mag.}\ }\textbf {\bibinfo {volume} {6}},\ \bibinfo {pages}
+  {1061} (\bibinfo {year} {1961})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Giuliani}\ \emph {et~al.}(2016)\citenamefont
+  {Giuliani}, \citenamefont {Jauslin},\ and\ \citenamefont
+  {Lieb}}]{Giuliani2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Giuliani}}, \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont {Jauslin}},\
+  and\ \bibinfo {author} {\bibfnamefont {E.~H.}\ \bibnamefont {Lieb}},\
+  }\bibfield  {title} {\bibinfo {title} {A {P}faffian formula for monomer-dimer
+  partition functions},\ }\href {https://doi.org/10.1007/s10955-016-1484-1}
+  {\bibfield  {journal} {\bibinfo  {journal} {J. Stat. Phys.}\ }\textbf
+  {\bibinfo {volume} {163}},\ \bibinfo {pages} {211} (\bibinfo {year}
+  {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Won}(2026{\natexlab{b}})}]{repo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Won}},\ }\href@noop {} {\bibinfo {title} {shakti-arctic-design: codes and
+  data}},\ \bibinfo {howpublished}
+  {\url{https://github.com/cywon-commits/shakti-arctic-design}} (\bibinfo
+  {year} {2026}{\natexlab{b}})\BibitemShut {NoStop}%
+\bibitem [{FLINT()}]{flint}%
+  \BibitemOpen
+  FLINT,\ \href@noop {} {\bibinfo {title} {{FLINT}: {F}ast {L}ibrary for
+  {N}umber {T}heory}},\ \bibinfo {howpublished} {\url{https://flintlib.org}}
+  (\bibinfo {year} {2025})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Propp}(2003)}]{Propp2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Propp}},\ }\bibfield  {title} {\bibinfo {title} {Generalized
+  domino-shuffling},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Theor. Comput. Sci.}\ }\textbf {\bibinfo {volume} {303}},\ \bibinfo {pages}
+  {267} (\bibinfo {year} {2003})},\ \Eprint
+  {https://arxiv.org/abs/math/0111034} {arXiv:math/0111034} \BibitemShut
+  {NoStop}%
+\end{thebibliography}%

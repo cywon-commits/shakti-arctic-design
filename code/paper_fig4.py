@@ -31,7 +31,7 @@ for k,(a,phi) in enumerate(zip(axs,phis)):
     im=liq_image(a,st['cen'],1-st['mx'],((0,L+1),(0,L+1)),res=300,rmax=1.3)
     for u,v in c.caps():
         for X,Y in ((u,v),(v,u)): a.plot((L+1)*X,(L+1)*Y,color=ACCENT,lw=1.0)
-    a.set_aspect('equal'); a.axis('off'); a.set_title(f'(J/2T)/m = {phi:.2f}',fontsize=7.5); label(a,'bcd'[k],0.1,0.98)
+    a.set_aspect('equal'); a.axis('off'); a.set_title(f'$q$ = {phi:.2f}',fontsize=7.5); label(a,'bcd'[k],0.1,0.98)
     a.plot([0,0,L+1],[L+1,0,0],color='k',lw=1.6,solid_capstyle='butt'); a.plot([0,L+1,L+1],[L+1,L+1,0],color='0.5',lw=0.7,ls=(0,(2,1.5)))
 cax=fig.add_axes([0.25,0.06,0.37,0.025]); cb=fig.colorbar(im,cax=cax,orientation='horizontal'); cb.set_label(r'liquidity $1-P_{\max}$',labelpad=1); cb.ax.tick_params(labelsize=6)
 # (e) liquid fraction
@@ -43,6 +43,6 @@ for Lk in (32,48,64):
 for Lk,mk,col in ((32,'s',OI['sky']),(48,'^',OI['green']),(64,'o',OI['blue'])):
     d=np.array(dat[Lk]); axe.plot(d[:,0],d[:,1],mk,ms=3.2,mfc='none',mec=col,mew=0.8,label=f'L = {Lk}')
 axe.axvline(math.log(1+2**.5),color='0.5',ls=':',lw=0.8); axe.text(math.log(1+2**.5)+0.015,0.55,r'$\ln(1+\sqrt{2})$',rotation=90,ha='left',fontsize=6.5)
-axe.set_xlabel(r'$J/(2T)\,/\,m$'); axe.set_ylabel('liquid fraction'); axe.set_xlim(0,0.97); axe.set_ylim(0,1.03); axe.legend(loc='lower left',fontsize=6.5,handlelength=1.2)
+axe.set_xlabel(r'$q=J/(2mT)$'); axe.set_ylabel('liquid fraction'); axe.set_xlim(0,0.97); axe.set_ylim(0,1.03); axe.legend(loc='lower left',fontsize=6.5,handlelength=1.2)
 label(axe,'e',-0.12,1.0)
 save(fig,'fig4')
