@@ -61,7 +61,7 @@ F numerical methods.
 3. Settled: the vorticity paper's statement that arrays cut through the blocks avoid the T_on limit is wrong. Their
    boundary vertices become unhappy while covering one plaquette (half-dimer sites, J/2 each, fugacity 2e^{-J/2T});
    the vertex model's first excited level of the through-block square equals the boundary-model count exactly
-   (768, 1966080, 67645734912 for N = 3, 5, 7), and the circle melts at x = 1, T = J/[(N+2) ln 2], the same expression
-   as T_on for a block-aligned square of the same side. This manuscript keeps Sec. VI; the vorticity paper must be
-   corrected (Sec. on straight edges and the design-rule paragraph of the conclusion).
+   (768, 1966080, 67645734912 for N = 3, 5, 7), and the circle melts at x = 1, T = J/[(N+2) ln 2]. Block-aligned edges also carry half-dimer sites,
+   so their T_on is J/[(n+4) ln 2] (vorticity paper, revised Eq. (15)); the two terminations differ by n+2 vs n+4. The vorticity paper has been corrected accordingly (reply of 2026-11-26);
+   Sec. VI of this manuscript cites its Eq. (15).
 4. Zenodo DOI for the repository at submission.

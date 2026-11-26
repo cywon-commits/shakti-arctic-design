@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.16)  26 NOV 2026 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.11.16)  26 NOV 2026 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -474,7 +474,7 @@ Package pdftex.def Info: figures/fig3_plus.pdf  used on input line 166.
 (pdftex.def)             Requested size: 510.0pt x 178.23088pt.
  [4]
 [5 <./figures/fig2_octagons.pdf> <./figures/fig3_plus.pdf>]
-<figures/fig4_switch.pdf, id=385, 527.28915pt x 198.45526pt>
+<figures/fig4_switch.pdf, id=386, 527.28915pt x 198.45526pt>
 File: figures/fig4_switch.pdf Graphic file (type pdf)
 <use figures/fig4_switch.pdf>
 Package pdftex.def Info: figures/fig4_switch.pdf  used on input line 220.
@@ -499,7 +499,7 @@ Underfull \hbox (badness 1577) in paragraph at lines 282--283
 []\OT1/cmr/m/n/10 The ex-act cal-cu-la-tion sup-ports this (Fig. [][]5[][] and
  []
 
-<figures/fig5_vacancy.pdf, id=473, 517.22133pt x 193.83939pt>
+<figures/fig5_vacancy.pdf, id=475, 517.22133pt x 193.83939pt>
 File: figures/fig5_vacancy.pdf Graphic file (type pdf)
 <use figures/fig5_vacancy.pdf>
 Package pdftex.def Info: figures/fig5_vacancy.pdf  used on input line 285.
@@ -521,7 +521,7 @@ Underfull \hbox (badness 1286) in paragraph at lines 321--322
  []
 
 [8] [9 <./figures/fig5_vacancy.pdf>] [10]
-<figures/fig6_vertex.pdf, id=559, 295.67664pt x 166.44585pt>
+<figures/fig6_vertex.pdf, id=561, 295.67664pt x 166.44585pt>
 File: figures/fig6_vertex.pdf Graphic file (type pdf)
 <use figures/fig6_vertex.pdf>
 Package pdftex.def Info: figures/fig6_vertex.pdf  used on input line 397.
@@ -582,10 +582,10 @@ msfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/
 eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb>
-Output written on main.pdf (13 pages, 996639 bytes).
+Output written on main.pdf (13 pages, 996839 bytes).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 605 compressed objects within 7 object streams
+ 795 PDF objects out of 1000 (max. 8388607)
+ 607 compressed objects within 7 object streams
  107 named destinations out of 1000 (max. 500000)
  239 words of extra memory for PDF output out of 10000 (max. 10000000)
 

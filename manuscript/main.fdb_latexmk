@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1795673546.32116 "main.aux" "main.bbl" "main" 1795673554.36837 0
-  "./mainNotes.bib" 1795673554.22976 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
+["bibtex main"] 1795676293.47431 "main.aux" "main.bbl" "main" 1795676294.11624 0
+  "./mainNotes.bib" 1795676293.98302 104 4d8bb863c86f3d7b03a471e9d4707f34 ""
   "./refs.bib" 1795673532.79212 9020 5aa48f9f7fa411df9670842e94ed9e34 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1795673554.22576 19931 0053eda6e23ee058b962ae18106b4156 "pdflatex"
+  "main.aux" 1795676293.98302 19979 0c3ab684727c467654f08849facf6bb9 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1795673553.73119 "main.tex" "main.pdf" "main" 1795673554.36864 0
+["pdflatex"] 1795676293.49843 "main.tex" "main.pdf" "main" 1795676294.11656 0
   "/etc/texmf/web2c/texmf.cnf" 1794855962 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -150,10 +150,10 @@
   "figures/fig4_switch.pdf" 1795673113.13568 73452 6707d74f7d940ccbd96e109b25cf7167 ""
   "figures/fig5_vacancy.pdf" 1795673113.13724 60748 66a9b60a2973452987bd48efaffd6486 ""
   "figures/fig6_vertex.pdf" 1795673113.13851 26216 15c78d314058b3b4adf22da8c27a32f2 ""
-  "main.aux" 1795673554.22576 19931 0053eda6e23ee058b962ae18106b4156 "pdflatex"
-  "main.bbl" 1795673546.3399 23023 bfd15e3ca9257b9850d7a55d986f9b3e "bibtex main"
-  "main.out" 1795673554.22976 4654 fa9a1a494212b901493714e40e06aa1e "pdflatex"
-  "main.tex" 1795673553.61962 63367 f47ecac017cee75834d3a0ef33daf8af ""
+  "main.aux" 1795676293.98302 19979 0c3ab684727c467654f08849facf6bb9 "pdflatex"
+  "main.bbl" 1795676293.49102 23023 bfd15e3ca9257b9850d7a55d986f9b3e "bibtex main"
+  "main.out" 1795676293.98302 4654 fa9a1a494212b901493714e40e06aa1e "pdflatex"
+  "main.tex" 1795676292.15138 63607 ed947640b9e95c0f5bdadb5802413b16 ""
   (generated)
   "main.aux"
   "main.log"
